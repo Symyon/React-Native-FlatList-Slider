@@ -78,7 +78,7 @@ export default class FlatListSlider extends Component {
           decelerationRate="fast"
           bounces={false}
           contentContainerStyle={this.props.contentContainerStyle}
-          data={this.state.data}
+          data={this.props.data}
           showsHorizontalScrollIndicator={false}
           renderItem={({item, index}) =>
             React.cloneElement(this.props.component, {
